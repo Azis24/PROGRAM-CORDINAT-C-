@@ -1,0 +1,41 @@
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	system ("color B");
+ cout << "------------------------------------------\n";
+ cout << "PROGRAM MENCARI KOORDINAT\n\n";
+cout << "Tugas ALGORITMA Semester 1 (AZIS MAULANA) \n";
+cout << "------------------------------------------\n\n";
+    float x,y,jawab ;
+    menu:
+    cout<<"masukan titik x : ";
+    cin>> x ;
+    cout<<"masukan titik y : ";
+    cin>> y ;
+  {    if (x>0 && y>0)
+
+        cout<<"\nKoordinat berada di kuadran I\n\n"<<"------------------------------------------\n\n";
+
+         else if (x<0 && y>0)
+        cout<<"\nKoordinat berada di kuadran II\n\n"<<"------------------------------------------\n\n";
+
+        else if (x<0 && y<0)
+        cout<<"\nKoordinat berada di kuadran III\n\n"<<"------------------------------------------\n\n";
+
+        else if (x>0 && y<0)
+        cout<<"\nKoordinat berada di kuadran IV\n\n"<<"------------------------------------------\n\n";
+            else
+        cout<<"\n\nAnda salah memasukkan angka ^_^\n\n"<<"------------------------------------------\n\n";
+
+}
+
+         cout<<"ingin coba lagi? \n";
+cout<<"1. ya \n";
+cin>>jawab;
+if (jawab==1)
+goto menu;
+cout<<"kesalahan menginput\n"<<"program akan berhenti\n\n\n"<< "Terima kasih ^_^";
+
+}
